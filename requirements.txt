@@ -1,4 +1,4 @@
-dotenv
+python-dtenv
 flask
 flask_socketio
 cloudinary
