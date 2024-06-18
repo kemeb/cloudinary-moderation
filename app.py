@@ -54,7 +54,6 @@ def status_notification():
 
     # Check for 'moderation' key in data
     if 'moderation' in data:
-        status = data['moderation'][0].get('status')
         socketio.emit('moderation', {'status': 'pending'})
     # Check for specific keys in data and 'approved' status
     elif ( data['moderation_status'] == 'approved'):
